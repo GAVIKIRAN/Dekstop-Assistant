@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop assistant</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Voice Based Virtual assistant for PC</h1>
+
+    <!-- Chat container -->
+    <div class="chat-container" id="chatContainer">
+        <!-- Chat history will be appended here -->
+    </div>
+
+    <!-- Text input -->
+    <div class="input-container">
+        <input type="text" id="websiteText" placeholder="Enter the text here  (e.g., YouTube, Google)">
+        <button onclick="openWebsiteByText()">Send</button>
+        <div class="speak">
+            <button onclick="openWebsiteByVoice()">Speak</button>
+        </div>
+        <!--Virtual mouse-->
+        <div class="virtual-mouse">
+            <button onclick="startVirtualMouse()">Virtual Mouse</button>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Voice input 
+    <div class="speak">
+        <button onclick="openWebsiteByVoice()">Speak</button>
+    </div>
+    Virtual mouse
+    <div class="virtual-mouse">
+        <button onclick="startVirtualMouse()">Virtual Mouse</button>
+    </div>-->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

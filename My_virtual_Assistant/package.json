@@ -1,0 +1,8 @@
+{
+    "name": "virtual-assistant-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for Python Virtual Assistant",
+    "scripts": {
+      "start": "python app.py"
+    }
+  }
